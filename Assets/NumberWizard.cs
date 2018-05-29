@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HelloWorld : MonoBehaviour {
+public class NumberWizard : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        print("Hello World");
+        string myName = "Arjay Jones!";
+        Debug.Log(string.Format("Hello, {0}", myName));
 	}
 
 	// Update is called once per frame
