@@ -13,7 +13,7 @@ public class NumberWizard : MonoBehaviour {
     {
         guess = Random.Range(givenMin, givenMax);
         gMin = givenMin;
-        gMax = givenMax;
+        gMax = givenMax+1;
         Debug.Log("Min: "+gMin);
         Debug.Log("Max: "+gMax);
         Debug.Log(string.Format("Is your number [H]igher or [L]ower than {0}? \n" +
@@ -34,7 +34,7 @@ public class NumberWizard : MonoBehaviour {
             gMax
         ));
         userRes = "";
-        guessNumber(gMin, gMax+1);
+        guessNumber(gMin, gMax);
     }
 
     // Update is called once per frame
