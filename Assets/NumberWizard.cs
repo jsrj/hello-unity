@@ -64,6 +64,7 @@ public class NumberWizard : MonoBehaviour {
                     break;
                 case "N": // Guessed number is correct
                     Debug.Log(string.Format("I knew it! {0} is the number you were thinking of!", guess));
+                    Start();
                     break;
             }
         }
