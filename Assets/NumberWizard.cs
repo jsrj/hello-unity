@@ -34,7 +34,7 @@ public class NumberWizard : MonoBehaviour {
             gMax
         ));
         userRes = "";
-        guessNumber(gMin, gMax);
+        guessNumber(gMin, gMax+1);
     }
 
     // Update is called once per frame
@@ -48,7 +48,7 @@ public class NumberWizard : MonoBehaviour {
         {
             userRes = "L";
         }
-        else if ((Input.GetKeyDown(KeyCode.Keypad3)) || (Input.GetKeyDown(KeyCode.Alpha3)))
+        else if ((Input.GetKeyDown(KeyCode.N)))
         {
             userRes = "N";
         }
